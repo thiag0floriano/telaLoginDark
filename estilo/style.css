@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 main {
@@ -23,14 +26,6 @@ section.imagem {
     flex-direction: column;
 }
 
-section.normal {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 section.imagem h1 {
     color: #77ffc0;
 }
@@ -40,7 +35,15 @@ section.imagem p {
     font-size: 1.5em;
 }
 
-div.card-login {
+section.normal {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.normal div.card-login {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -52,12 +55,13 @@ div.card-login {
     box-shadow: 0px 10px 40px #00000056;
 }
 
-section.normal h1 {
+section.normal div.card-login h1 {
     color: #00ff88;
     font-weight: 800;
 }
 
 section.normal div.card-login div.textfield {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
